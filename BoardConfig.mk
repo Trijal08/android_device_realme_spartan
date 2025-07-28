@@ -98,6 +98,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := BRAND_SHOW_FLAG=realme
 TARGET_KERNEL_SOURCE := kernel/realme/sm8250
 TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/debugfs.config
 
+# KernelSU and SuSFS
+TARGET_KERNEL_CONFIG += ksun_sus.config
+
 # Media
 TARGET_USES_ION := true
 
